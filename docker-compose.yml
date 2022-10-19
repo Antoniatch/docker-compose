@@ -1,0 +1,9 @@
+services:
+  app:
+    image: antoniatch/helloapp-docker
+  server:
+    image: docker-express
+    ports:
+      - 5050:5000
+  mongodb:
+    image: mongo
